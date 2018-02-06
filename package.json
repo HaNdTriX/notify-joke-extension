@@ -1,0 +1,22 @@
+{
+  "name": "notify-joke",
+  "version": "0.0.1",
+  "description": "Extension that triggers notifications coming from a graphql server.",
+  "scripts": {
+    "start": "npm run dev firefox & npm run server",
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build",
+    "server": "node server/index.js"
+  },
+  "devDependencies": {
+    "webextension-toolbox": "latest",
+    "apollo-cache-inmemory": "^1.1.7",
+    "apollo-client": "^2.2.2",
+    "apollo-link": "^1.0.7",
+    "apollo-link-ws": "^1.0.4",
+    "graphql-tag": "^2.7.0"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.2.2"
+  }
+}
